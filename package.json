@@ -6,7 +6,6 @@
 	"homepage": "https://webdevnerdstuff.github.io/snowflake-neon-bunny-theme/",
 	"license": "MIT",
 	"main": "index.js",
-	"dependencies": {},
 	"devDependencies": {
 		"@babel/core": "^7.17.10",
 		"@babel/preset-env": "^7.17.10",
@@ -15,7 +14,7 @@
 		"babel-preset-env": "^1.7.0",
 		"babelify": "^10.0.0",
 		"eslint": "^8.14.0",
-		"eslint-config-airbnb-base": "^14.2.1",
+		"eslint-config-airbnb-base": "^15.0.0",
 		"eslint-friendly-formatter": "^4.0.1",
 		"eslint-import-resolver-babel-module": "^5.3.1",
 		"eslint-plugin-babel": "^5.3.1",
