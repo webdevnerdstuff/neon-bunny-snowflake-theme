@@ -18,6 +18,7 @@ Creates a userscript to add theme to [Snowflake.com](https://www.snowflake.com/)
 ## Dependencies
 
 Chrome  
+[Grunt](https://gruntjs.com/)  
 [TamperMonkey](https://www.tampermonkey.net/)
 
 
