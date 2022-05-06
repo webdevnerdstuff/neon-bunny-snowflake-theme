@@ -96,13 +96,24 @@ module.exports = grunt => {
 			},
 			dev: {
 				options: {
+					outputStyle: 'expanded',
+					sourceMap: false,
+					implementation: sass,
+					precision: 10,
+				},
+				files: {
+					'dist/neon-bunny-snowflake-theme.css': 'src/**/*.scss',
+				},
+			},
+			min: {
+				options: {
 					outputStyle: 'compressed',
 					sourceMap: false,
 					implementation: sass,
 					precision: 10,
 				},
 				files: {
-					'.temp/styles.css': 'src/**/*.scss',
+					'dist/neon-bunny-snowflake-theme.min.css': 'src/**/*.scss',
 				},
 			},
 		},
@@ -116,7 +127,10 @@ module.exports = grunt => {
 				syntax: require('postcss-scss'),
 			},
 			dist: {
-				src: '.temp/styles.css',
+				src: 'dist/neon-bunny-snowflake-theme.css',
+			},
+			min: {
+				src: 'dist/neon-bunny-snowflake-theme.min.css',
 			},
 		},
 		// -------------------------- Watch //
@@ -134,7 +148,7 @@ module.exports = grunt => {
 	// -------------------------- Register Inject Styles Task //
 	grunt.registerTask('injectStyles', 'Replace Task', () => {
 		const jsFilePath = './dist/neon-bunny-snowflake-theme.user.js';
-		const stylesFilePath = '.temp/styles.css';
+		const stylesFilePath = './dist/neon-bunny-snowflake-theme.min.css';
 		const fs = require('fs');
 		const path = require('path');
 		const util = require('util');

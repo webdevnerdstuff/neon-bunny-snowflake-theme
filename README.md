@@ -1,11 +1,18 @@
 
 # Neon Bunny Snowflake Theme
 
-### Description
+## Description
 
-Creates a userscript to add theme to [Snowflake.com](https://www.snowflake.com/) console pages (Chrome supported currently). You need to know how to install a userscript to use the theme. It's not perfect, but it's at least a dark theme.
+Creates a userscript to add theme to [Snowflake.com](https://www.snowflake.com/) console pages (Chrome supported currently). It's not perfect, but it's at least a dark theme.
 
-### Instructions
+There are two ways to use this theme.
+### Browser Extension that injects styles
+You can use a browser extension like [Stylebot](https://chrome.google.com/webstore/detail/stylebot/oiaejidbmkiecgbjeifoejpgmdaleoha?hl=en-US) or [User CSS](https://chrome.google.com/webstore/detail/user-css/okpjlejfhacmgjkmknjhadmkdbcldfcb?hl=en) to add the styles from the file `dist/neon-bunny-snowflake-theme.css`.
+
+### Userscript
+You can use the userscript file using an extension like [TamperMonkey](https://www.tampermonkey.net/) to install the script from `dist/neon-bunny-snowflake-theme.user.js`.
+
+## Instructions
 
 1. Clone repository `git clone git@github.com:webdevnerdstuff/neon-bunny-snowflake-theme.git`
 2. Change into the cloned repository directory `cd neon-bunny-snowflake-theme`
@@ -13,7 +20,7 @@ Creates a userscript to add theme to [Snowflake.com](https://www.snowflake.com/)
 4. If you want to adjust the styles to your own preference, update the CSS variables in the `src/scss/styles.scss` file
 5. Run grunt `grunt`
 6. Save the `src/js/neon-bunny-snowflake-theme.js` or `src/scss/styles.scss` file to compile the theme
-7. Install the userscript
+7. Install the userscript and/or add to your browser extension styles
 
 ## Dependencies
 
