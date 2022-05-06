@@ -1,13 +1,24 @@
 
 # Snowflake Neon Bunny Theme
 
-### Subtitle
+### Description
 
-Description...
+Creates a userscript to add theme to Snowflake.com console pages (Chrome supported currently). You need to know how to install a userscript to use the theme.
+
+### Instructions
+
+1. Clone repository `git clone git@github.com:webdevnerdstuff/snowflake-neon-bunny-theme.git`
+2. Change into the cloned repository directory `cd snowflake-neon-bunny-theme`
+3. Install node packages `npm i`
+4. If you want to adjust the styles to your own preference, update the CSS variables in the `src/scss/styles.scss` file
+5. Run grunt `grunt`
+6. Save the `src/js/snowflake-neon-bunny-theme.js` or `src/scss/styles.scss` file to compile the theme
+7. Install the userscript
 
 ## Dependencies
 
-TamperMonkey
+Chrome  
+[TamperMonkey](https://www.tampermonkey.net/)
 
 
 ## License
