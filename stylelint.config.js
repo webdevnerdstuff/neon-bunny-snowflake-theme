@@ -6,7 +6,7 @@ module.exports =
 		'stylelint-order',
 		'stylelint-scss',
 	],
-	customSyntax: "postcss-scss",
+	customSyntax: 'postcss-scss',
 	rules: {
 		// ------------------------------------------------------ CSS
 
@@ -91,7 +91,7 @@ module.exports =
 		'number-max-precision': 10,
 
 		// Time
-		'time-min-milliseconds': 025,
+		'time-min-milliseconds': 0.25,
 
 		// Unit
 		'unit-disallowed-list': [],
@@ -140,7 +140,7 @@ module.exports =
 		'selector-combinator-disallowed-list': [],
 		'selector-combinator-allowed-list': null,
 		'selector-id-pattern': '',
-		'selector-max-attribute': 2,
+		'selector-max-attribute': 5,
 		'selector-max-class': null,
 		'selector-max-combinators': null,
 		'selector-max-compound-selectors': null,
@@ -326,19 +326,15 @@ module.exports =
 		// General / Sheet
 		indentation: 'tab',
 		linebreaks: 'unix',
-		'max-empty-lines': 2,
+		'max-empty-lines': 1,
 		'max-line-length': null,
 		'no-eol-whitespace': true,
 		'no-missing-end-of-source-newline': true,
 		'no-empty-first-line': true,
 		'unicode-bom': 'never',
 
-
 		// ------------------------------------------------------ SCSS
-
-		/*
-			* Stylelint SCSS Rules Reference: https://github.com/kristerkari/stylelint-scss
-		*/
+		// Stylelint SCSS Rules Reference: https://github.com/kristerkari/stylelint-scss //
 
 		// @-each
 		'scss/at-each-key-value-single-line': true,

@@ -44,7 +44,6 @@ module.exports = grunt => {
 		// -------------------------- ESLINT //
 		eslint: {
 			options: {
-				configFile: '.eslintrc.js',
 				maxWarnings: 10,
 				fix: grunt.option('fix'),
 			},
@@ -76,6 +75,19 @@ module.exports = grunt => {
 			},
 		},
 		// ==================================================== Style Tasks //
+		// -------------------------- Stylelint //
+		stylelint: {
+			options: {
+				configFile: 'stylelint.config.js',
+				formatter: 'string',
+				ignoreDisables: false,
+				failOnError: true,
+				fix: true,
+				reportNeedlessDisables: false,
+				syntax: '',
+			},
+			src: ['src/**/*.scss'],
+		},
 		// -------------------------- SCSS //
 		sass: {
 			options: {
@@ -94,25 +106,16 @@ module.exports = grunt => {
 				},
 			},
 		},
-		// -------------------------- Stylelint //
-		stylelint: {
-			options: {
-				configFile: 'stylelint.config.js',
-				formatter: 'string',
-				ignoreDisables: false,
-				failOnError: true,
-				fix: true,
-				reportNeedlessDisables: false,
-				syntax: '',
-			},
-			src: ['src/**/*.scss'],
-		},
 		// -------------------------- POSTCSS //
 		postcss: {
-			dev: {
-				map: {
-					inline: false,
-				},
+			options: {
+				map: false,
+				processors: [
+					require('autoprefixer'),
+				],
+				syntax: require('postcss-scss'),
+			},
+			dist: {
 				src: '.temp/styles.css',
 			},
 		},
@@ -124,7 +127,6 @@ module.exports = grunt => {
 			all: {
 				files: ['src/**/*.js', 'src/**/*.scss'],
 				tasks: ['stylelint', 'sass', 'postcss', 'eslint', 'babel', 'uglify', 'usebanner', 'injectStyles', 'clean'],
-
 			},
 		},
 	});
@@ -168,9 +170,6 @@ module.exports = grunt => {
 			});
 		});
 	});
-
-	// -------------------------- Load NPM Tasks//
-	grunt.loadNpmTasks('gruntify-eslint');
 
 	// -------------------------- Register Tasks //
 	grunt.registerTask('default', ['watch']);
