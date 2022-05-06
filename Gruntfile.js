@@ -7,7 +7,7 @@ module.exports = grunt => {
 
 	const banner = `
 // ==UserScript==
-// @name         Snowflake Neon Bunny Theme
+// @name         Neon Bunny Snowflake Theme
 // @namespace    ${packageJSON.homepage}
 // @version      ${packageJSON.version}
 // @description  ${packageJSON.description}
@@ -37,7 +37,7 @@ module.exports = grunt => {
 					presets: ['@babel/preset-env'],
 				},
 				files: {
-					'.temp/snowflake-neon-bunny-theme.js': 'src/js/snowflake-neon-bunny-theme.js',
+					'.temp/neon-bunny-snowflake-theme.js': 'src/js/neon-bunny-snowflake-theme.js',
 				},
 			},
 		},
@@ -59,7 +59,7 @@ module.exports = grunt => {
 			},
 			dist: {
 				files: {
-					'dist/snowflake-neon-bunny-theme.user.js': ['.temp/snowflake-neon-bunny-theme.js'],
+					'dist/neon-bunny-snowflake-theme.user.js': ['.temp/neon-bunny-snowflake-theme.js'],
 				},
 			},
 		},
@@ -71,7 +71,7 @@ module.exports = grunt => {
 					linebreak: true,
 				},
 				files: {
-					src: ['dist/snowflake-neon-bunny-theme.user.js'],
+					src: ['dist/neon-bunny-snowflake-theme.user.js'],
 				},
 			},
 		},
@@ -131,7 +131,7 @@ module.exports = grunt => {
 
 	// -------------------------- Register Inject Styles Task //
 	grunt.registerTask('injectStyles', 'Replace Task', () => {
-		const jsFilePath = './dist/snowflake-neon-bunny-theme.user.js';
+		const jsFilePath = './dist/neon-bunny-snowflake-theme.user.js';
 		const stylesFilePath = '.temp/styles.css';
 		const fs = require('fs');
 		const path = require('path');
