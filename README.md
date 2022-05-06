@@ -20,7 +20,7 @@ You can use the userscript file using an extension like [TamperMonkey](https://w
 4. If you want to adjust the styles to your own preference, update the CSS variables in the `src/scss/styles.scss` file
 5. Run grunt `grunt`
 6. Save the `src/js/neon-bunny-snowflake-theme.js` or `src/scss/styles.scss` file to compile the theme
-7. Install the userscript and/or add to your browser extension styles
+7. Install the userscript or user the the compiled styles from `dist/neon-bunny-snowflake-theme.css` to add to your browser extension styles
 
 ## Dependencies
 
