@@ -121,6 +121,7 @@
 	}
 
 	&.home-common-dock-welcome {
+
 		&,
 		* {
 			background-color: var(--dark-background) !important;
@@ -202,6 +203,7 @@ input {
 	cursor: pointer;
 
 	&[currentitem='false'] {
+
 		&,
 		div {
 			background-color: var(--dark-background) !important;
@@ -214,7 +216,6 @@ input {
 		}
 	}
 }
-
 
 [data-for='tabbar-control-add-tab'] {
 	background-color: var(--light-background) !important;
@@ -266,6 +267,7 @@ input {
 /* Query Pane */
 .Resizer {
 	+ div {
+
 		div,
 		.SplitPane {
 			background-color: var(--light-background) !important;
@@ -295,6 +297,7 @@ input {
 
 /* Modal */
 .ReactModalPortal {
+
 	*,
 	.ReactModal__Content {
 		background-color: var(--light-background);
@@ -311,6 +314,7 @@ input {
 		}
 
 		.CodeMirror-line {
+
 			&,
 			span {
 				background-color: var(--dark-background) !important;
@@ -347,6 +351,7 @@ input {
 }
 
 .x-grid-row {
+
 	&:nth-child(even),
 	&:nth-child(odd) {
 		color: var(--terminal-white) !important;
@@ -389,6 +394,7 @@ input {
 		> div {
 			&:not(.fixedDataTableRowLayout_rowWrapper) {
 				.fixedDataTableRowLayout_rowWrapper {
+
 					&:nth-child(even) *,
 					&:nth-child(odd) * {
 						color: var(--terminal-white) !important;
