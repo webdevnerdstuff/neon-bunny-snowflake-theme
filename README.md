@@ -24,9 +24,7 @@ You can use the userscript file using an extension like [TamperMonkey](https://w
 
 ## Dependencies
 
-Chrome  
 [Grunt](https://gruntjs.com/)  
-[TamperMonkey](https://www.tampermonkey.net/)
 
 
 ## License
