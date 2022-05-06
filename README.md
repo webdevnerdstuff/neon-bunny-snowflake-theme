@@ -3,7 +3,7 @@
 
 ## Description
 
-Creates a userscript to add theme to [Snowflake.com](https://www.snowflake.com/) console pages (Chrome supported currently). It's not perfect, but it's at least a dark theme.
+Creates a userscript and style sheets to add a theme to [Snowflake.com](https://www.snowflake.com/) console pages (Chrome supported currently). It's not perfect, but it's at least a dark theme.
 
 There are two ways to use this theme.
 ### Browser Extension that injects styles
